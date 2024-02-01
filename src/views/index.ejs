@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Book Dir</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Book Directory</h1>
+    <h2>Welcome to Your Dashboard.</h2>
+    <div >
+      <% books.map((book)=>{ %>
+        <div style="margin-top: 2vmax; display: flex; align-items: center; border: 2px solid yellowgreen;">
+
+          <h1> <%= book.name  %></h1>
+          <p> <%= book.note %> </p>
+        </div>
+     <% }) %>
+    </div>
+  </body>
+</html>
